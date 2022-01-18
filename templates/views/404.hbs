@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel='stylesheet' href='/css/styles.css'> 
+    <!-- Remember this path comes from the public directory where the server was launched and serves assets, it is an ABSOLUTE PATH. -->
+
+    <link rel='icon' href='/img/weather.png'> 
+    <!-- Sets the tab icon at the top, ABSOLUTE PATH from the public directory where the server was launched and sends static assets. --> 
+
+    <title>404 Error</title> 
+    <!-- This sets the title of the tab, it doesn't show up in your markup. So in chrome, the tab at the top reads '404 Error' -->
+</head>
+
+<body>
+    <div class='main-content'>
+        <h1>{{title}}</h1>
+        <h2>{{errorMessage}}</h2>
+        <nav>
+            <a href='/'>Back to Weather</a>
+            <a href='/about'>About</a>
+            <a href='/help'>Help</a>
+        </nav>
+    </div>
+
+    {{>footer}}
+
+</body>

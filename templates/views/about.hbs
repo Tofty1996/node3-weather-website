@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <!-- This imports the style sheet, it's an ABSOLUTE PATH from the public directory where server was launched & static assets are served -->
+
+    <link rel='icon' href='/img/weather.png'> 
+    <!-- Sets the tab icon at the top, ABSOLUTE PATH, same as above. -->
+
+    <title>About</title>
+    <!-- Sets tab title visible in chrome at top of browser. -->
+</head>
+
+<body>
+    <div class='main-content'>
+        {{>header}}
+        <img class='portrait' src='/img/jordanpic.jpg'>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>

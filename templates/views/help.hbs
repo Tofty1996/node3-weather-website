@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <!-- This imports the style sheet, it's an ABSOLUTE PATH from the public directory where server was launched & static assets are served -->
+
+    <link rel='icon' href='/img/weather.png'> 
+    <!-- Sets the tab icon at the top in chrome, ABSOLUTE PATH same as above. -->
+
+    <title>Help</title>
+    <!-- Sets tab title in chrome, visible at top of screen. -->
+</head>
+
+<body>
+    <div class='main-content'>
+        {{>header}}
+        <p>{{helpText}}</p> <!-- This is how you pass in a variable. Variables are passed to hbs docs in app.get, see src/app.js -->
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>

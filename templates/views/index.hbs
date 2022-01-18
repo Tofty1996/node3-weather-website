@@ -1,0 +1,51 @@
+<!-- index.html or .hbs is a special file name, it means it is the home page of your domain.
+This is the most important 'view' I have, so look carefully at comments here. -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <!-- This imports the style sheet, it's an ABSOLUTE PATH from the public directory where server was launched & static assets are served -->
+
+    <link rel='icon' href='/img/weather.png'> 
+    <!-- Sets the tab icon at the top, ABSOLUTE PATH, same as above. -->
+    <title>Weather</title> 
+    <!-- This sets the title of the tab, it doesn't show up in your markup. So in chrome, the tab at the top reads 'Weather' -->
+</head>
+
+<body>
+    <div class='main-content'>
+
+        {{>header}}
+        <!-- This is how you pass in a partial. -->
+
+        <form>
+            <input type='search' placeholder='Location...'>
+            <button type='submit'>Search</button>
+        </form>
+
+        <h2 id='msgOne'>
+
+        </h2>
+
+        <p id='msgTwo'>
+
+        </p>
+
+        <p id='msgThree'>
+
+        </p>
+
+    </div>
+
+    {{>footer}}
+
+    <script src='/js/app.js'></script> 
+    <!-- Loading in here because the forms etc need to load before the client side JS loads.
+    If this was in the head, it would try to add an event listener to a non-existent form element -->
+
+</body>
+
+</html>

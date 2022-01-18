@@ -1,0 +1,76 @@
+/* This CSS stylesheet is made public here so my site can use these styles throughout. */
+
+
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; /* Group all elements and make them into a column */
+    flex-direction: column;
+    min-height: 100vh; /* Body height is now always max screen height. */
+}
+
+footer { /* Footer is outside of main-content div */
+    color: #888888;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #eeeeee
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.portrait {
+    width: 300px;
+}
+
+.main-content {
+    flex-grow: 1; 
+    /* This means any element with this class will grow to fill the remaining space. 
+    The size of the text or images etc. won't change, but the space the element takes up will.
+    Think of it like having a huge margin, maybe.
+    As the footer is outside of the div with this class (holding all our other content), and that
+    div will grow to take up all remaining space, it pushes our footer to the bottom of the page. */
+}
+
+input {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+nav a {                     /* Bit sloppy here, using same style as on header anchor tags, but only slight repetition here */
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;    
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
