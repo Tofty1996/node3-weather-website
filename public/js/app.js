@@ -14,7 +14,7 @@ weatherForm.addEventListener('submit', (e) => {
     msgTwo.innerHTML = ''               //Clears any previous location data upon a new search.
     msgThree.innerHTML = ''
 
-    fetch(`http://localhost:3000/weather?address=${searchTerm.value}`).then((response) => {
+    fetch(`/weather?address=${searchTerm.value}`).then((response) => {
     response.json().then((data) => {
         if (data.error) { 
             msgOne.innerHTML = data.error;
