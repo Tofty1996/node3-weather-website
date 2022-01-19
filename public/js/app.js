@@ -25,7 +25,8 @@ weatherForm.addEventListener('submit', (e) => {
             msgTwo.innerHTML = 
             `${data.weather}.<br><br>
             Temperature: ${data.temperature}°c.<br><br>
-            Feels like: ${data.feelsLike}°c.<br><br>`
+            Feels like: ${data.feelsLike}°c.<br><br>
+            Humidity: ${data.humidity}%`
 
             msgThree.innerHTML = 'This location not quite right? Try refining your search...'
             
