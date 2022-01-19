@@ -41,6 +41,7 @@ header a:hover {
 
 .portrait {
     width: 300px;
+    border-radius: 10px;
 }
 
 .main-content {
@@ -73,4 +74,35 @@ nav a {                     /* Bit sloppy here, using same style as on header an
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.inlineAnchor {
+    text-decoration: none;
+    color: #888888;  
+}
+
+.inlineAnchor:hover {
+    text-decoration: underline;
+}
+
+#bioDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+#bioText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+#aboutText {
+    margin-top: 32px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
 }

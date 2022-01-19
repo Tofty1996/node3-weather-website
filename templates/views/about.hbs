@@ -15,8 +15,36 @@
 
 <body>
     <div class='main-content'>
+
         {{>header}}
-        <img class='portrait' src='/img/jordanpic.jpg'>
+
+        <div id="bioDiv">
+
+            <img class='portrait' src='/img/jordanpic.jpg'>
+
+            <div id="bioText">
+
+                <h2>I'm Jordan Toft</h2>
+
+                <p>I'm an aspiring developer living in Kyoto, Japan.</p>
+                    
+                <a class="inlineAnchor" href="https://github.com/Tofty1996">Github</a>
+
+                <a class="inlineAnchor" href="https://www.freecodecamp.org/tofty">freeCodeCamp</a>
+
+                <a class="inlineAnchor" href="https://twitter.com/tofty1996">Twitter</a>
+
+            </div>
+
+        </div>
+
+        
+        <p id="aboutText">
+            This site was made as part of my Node JS course. <br>It uses location data from 
+            <a class="inlineAnchor" href="http://mapbox.com" target="_blank">Mapbox.com</a>, 
+            and weather data from <a class="inlineAnchor" href="http://weatherstack.com" target="_blank">Weatherstack.com</a>! 
+            <br>I hope you enjoy using it!
+        </p>
     </div>
 
     {{>footer}}
